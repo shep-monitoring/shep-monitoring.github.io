@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*		
+
+CONSTANT DEFINITION
+
+---- Contents Area ----
+text color: #31483f
+text color for links: #517768 /from USACE website / 
+
+background color for highlight boxes: 
+
+*/
+
+body{
+	background: *fff*; /*#f3f4f2*/
+	font-family:Arial, Helvetica, sans-serif;	
+	
+		
+}
+
+h1{
+	color: #688472;
+	font-size:19px;
+	font-weight:bold;
+}
+
+h2{
+	color: #688472;
+	font-size:16px;
+	font-weight:bold;
+}
+
+h3{
+	color: #688472;
+	font-size:14px;
+	font-weight:bold;
+}
+
+h4{
+	color: #688472;
+	font-size:12px;
+	font-weight:bold;
+}
+
+p{
+	font-size:14px;
+	line-height: 130%;	
+}
+
+li{
+	font-size:13px;	
+}
+
+.sectionName{
+	color: #688472;	
+	font-weight:bold;
+}
+
+.box{
+	border: thin solid #547968;
+	border-radius:25px;
+	font-size:13px;	
+	margin-bottom:7px;	
+	margin-top: 7px;	
+	padding-left: 10px;
+	padding-right: 10px;		
+}
+
+
+
+
