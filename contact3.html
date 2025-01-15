@@ -89,6 +89,10 @@ function MM_popupMsg(msg) { //v1.0
 		<form action="https://api.web3forms.com/submit" method="POST">
 
     <input type="hidden" name="access_key" value="5774c36e-8b39-47cf-b7d0-f1b44f161758">
+	<input type="hidden" name="subject" value="SHEP: request to be added to listser">
+	<input type="hidden" name="redirect" value="https://shep.uga.edu/reports.html">
+			
+			
 
 	<h2>Use the form below to subscribe to the listserv of the Savannah Harbor Expansion Project (SHEP) Monitoring Program:</h2>
 		
@@ -108,8 +112,8 @@ function MM_popupMsg(msg) { //v1.0
 
 	</p>
 			
-    <input type="hidden" name="redirect" value="https://web3forms.com/success">
-
+	<div class="h-captcha" data-captcha="true"></div>
+			
 	<p>
 	<button type="submit">Send</button>
 	</p>
@@ -147,7 +151,9 @@ function MM_popupMsg(msg) { //v1.0
 </form>
 		-->
 
-	</div>    
+	</div>  
+<script src="https://web3forms.com/client/script.js" async defer></script>
+		
 	<script>
 	function myfunction() {
 		location.reload();
