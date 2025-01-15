@@ -60,8 +60,9 @@ function MM_popupMsg(msg) { //v1.0
   </div>
     <section><!-- InstanceBeginEditable name="content" -->
 	<div class="box contact_leftBox"> 
+		<br/>
 
-        <h2>For information about this website, please contact:</h2>
+        <h2>For information about this website and map portal, please contact:</h2>
         <p>Dr. Sergio Bernardes<br>
         Center for Geospatial Research<br>
         Department of Geography<br>
@@ -70,6 +71,7 @@ function MM_popupMsg(msg) { //v1.0
         
         <p class="link"><a href="mailto:sbernard@uga.edu?subject=Inquiry from SHEP Website" class="link">sbernard@uga.edu</a>
         </p>
+		<br/>
         <h2>For information about the SHEP monitoring program, please contact:</h2>
         <p>Ms. Summer Wright<br>
         U.S. Army Corps of Engineers<br>
@@ -78,65 +80,80 @@ function MM_popupMsg(msg) { //v1.0
         100 West Oglethorpe Ave<br>
         Savannah, GA 31401</p>
         
-      <p class="link"><a href="mailto:Summer.g.wright@usace.army.mil?subject=Inquiry about the SHEP monitoring program" class="link">Summer.g.wright@usace.army.mil</a></p>
+      <p class="link"><a href="mailto:Summer.g.wright@usace.army.mil?subject=Inquiry about the SHEP monitoring program" class="link">summer.g.wright@usace.army.mil</a></p>
+				<br/>
+
     </div>
 	<div class="box contact_rightBox">
-	  <form name="contact" method="post" action="mailscript.php">
-	    <p>
-	      <label for="recipient">Recipient:</label><br/>
-	      <select name="recipient" id="recipient" style="width:95%;">
-          		<option value="Choose a Recipient">Choose a Recipient</option>
-				<option value="sbernard@uga.edu">Center for Geospatial Research</option>                
- 			<option value="Mary.E.Richards@usace.army.mil">US Army Corps of Engineers</option>
-            <option value="sbernard@uga.edu" selected>Subscribe to email alerts</option>
-          </select>
-	    </p>
-	    <p>
-	      <label for="name">Your Name:</label><br/>
-	      <span id="sprytextfield2">
-	      <input type="text" name="name" id="name" style="width:60%;">
-	      <span class="textfieldRequiredMsg">A value is required.</span></span></p>
-	    <p>
-	      <label for="emailaddress">Your Email Address:</label><br/>
-	      <span id="sprytextfield1">
-          <input name="emailaddress" type="text" id="emailaddress" style="width:60%;" onBlur="MM_validateForm('name','','R','emailaddress','','RisEmail','','R','recaptcha_challenge_field','','R');return document.MM_returnValue">
-          <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span></p>
-	    <p>
-	      <label for="message">Message:</label><br/>
-	      <span id="sprytextfield2">
-          <textarea name="message" id="message" style="width:95%;height:200px;"></textarea>
-          <span class="textfieldRequiredMsg">A value is required.</span></span>
-	    </p>
-	    <p>
-	      <input name="contactme" type="checkbox" id="contactme" value="Please contact me" checked>
-	      <label for="contactme">Contact Me: A response is requested.</label><br/>
-	    
-	    </p>
-        
-        <div style="margin-top:10px;">
-        
-          <script type="text/javascript">
-                    var RecaptchaOptions = {
-                        theme : '',
-                        tabindex : 0
-                    };
-        
-            </script><script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LcLJdkSAAAAABELowzhpB2LxC5ulSd37GnQB__D">
-        
-            </script><noscript>
-                    <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LcLJdkSAAAAABELowzhpB2LxC5ulSd37GnQB__D" width="500" height="300" frameborder="0">
-        
-                    </iframe><br /><textarea name="recaptcha_challenge_field" cols="40" rows="3" id="recaptcha_challenge_field"></textarea><input name="recaptcha_response_field" value="manual_challenge" type="hidden" />
-            </noscript>
-          
-        </div>
+	
+		<form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="5774c36e-8b39-47cf-b7d0-f1b44f161758">
+	<input type="hidden" name="subject" value="SHEP: request to be added to listserv">
+	<input type="hidden" name="redirect" value="https://shep.uga.edu/sucess.html">
+			
+			
+
+	<h2>Use the form below to subscribe to the listserv of the Savannah Harbor Expansion Project (SHEP) Monitoring Program:</h2>
+		
+	<p>
+	  <label for="name">Your Name*:</label><br/>
+	  <input name="name" type="text" id="name" style="width:60%;" required>
+	</p>
+
+	<p>
+	  <label for="emailaddress">Your Email Address*:</label><br/>
+	  <input name="email" type="email" style="width:60%;" required>			
+	</p>	
+
+	<p>
+	  <label for="message">Message (optional):</label><br/>
+	  <textarea name="message" id="message" style="width:95%;height:200px;"></textarea>
+	</p>
+	<p><small>* required fields</small></p>					
+			
+	<div class="h-captcha" data-captcha="true"></div>
+			
+	<p>
+	<button type="submit">Send</button>
+	</p>
+			
+
+</form>
+		
+		
+<!--		
+		<form action="https://fabform.io/f/inY2kjK" method="post">
+		<h2>Use the form below to subscribe to the listserv of the Savannah Harbor Expansion Project (SHEP) Monitoring Program:</h2>
 
 	    <p>
-	      <input name="button" type="submit" id="button" onClick="MM_popupMsg('Thank you for your submission.')" value="Send Message">
+	      <label for="name">Your Name*:</label><br/>
+	      <input name="name" type="text" id="name" style="width:60%;" required>
 	    </p>
-<!-- onClick="MM_popupMsg('Thank you for your submission.')-->	    
-	  </form>
-	</div>    
+		<p>
+	      <label for="emailaddress">Your Email Address*:</label><br/>
+		  <input name="email" type="email" style="width:60%;" required>			
+		</p>	
+	    <p>
+	      <label for="message">Message (optional):</label><br/>
+          <textarea name="message" id="message" style="width:95%;height:200px;"></textarea>
+			
+	    </p>
+		<p><small>* required fields</small></p>			
+			
+		<input name="contactme" type="checkbox" id="contactme" value="Please contact me" checked>
+			
+		<label for="contactme">Contact Me: A response is requested.</label><br/>			
+		<p>
+		<button type="submit">Send</button>
+		</p>
+			
+</form>
+		-->
+
+	</div>  
+<script src="https://web3forms.com/client/script.js" async defer></script>
+		
 	<script>
 	function myfunction() {
 		location.reload();
