@@ -40,6 +40,17 @@ background color for highlight boxes:
 	z-index:0;
 }
 
+#container_monitoring_placemat{
+	background: #FFF;
+	font-family: Arial, Helvetica, sans-serif; /* the entire site should be arial */
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -8px;
+	padding-bottom: 15px;
+	position:relative;
+	width: 1250px;
+	z-index:0;
+}
 
 #header{
 	background: #FFF;
@@ -63,6 +74,17 @@ background color for highlight boxes:
 	width: 1500px;
 }
 
+#header_monitoring_placemat{
+	background: #FFF;
+	border-style:none;
+	height: 170px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	position: relative;
+	width: 1240px;
+}
+
 
 #home {
 	border-style:none;	
@@ -78,6 +100,16 @@ background color for highlight boxes:
 	border-style:none;	
     height: 25px;
     left: 523px;	
+    position: absolute;
+    top: 159px;
+    width: 25px;
+	z-index:2000;	
+}
+
+#home_monitoring_placemat {
+	border-style:none;	
+    height: 25px;
+    left: 360px;	
     position: absolute;
     top: 159px;
     width: 25px;
@@ -106,6 +138,10 @@ nav{
 
 .nav_monitoring{
 	margin-left: 490px;
+}
+
+.nav_monitoring_placemat{
+	margin-left: 345px;
 }
 
 /*
@@ -167,6 +203,16 @@ section{
 	width: 1500px;	
 }
 
+#footer_monitoring_placemat{
+	background: #CCC url(../images/footer.jpg) repeat-x;
+	border-style:none;		
+	clear: both;
+	height: 166px;
+	margin-left: auto;
+	margin-right: auto;	
+	width: 1240px;	
+}
+
 #footer_topLeft{
 	clear: none;
 	float: left;
@@ -212,6 +258,14 @@ section{
 	width: 730px;	
 }
 
+#footer_bottomCenter_monitoring_placemat{
+	float: left;
+	height: auto;
+	text-align: center;
+	width: 470px;	
+}
+
+
 #footer_bottomRight{
 	float: right;
 	height: auto;
@@ -230,6 +284,12 @@ section{
 }
 
 #footer_monitoring p{
+	color: #38614F;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+#footer_monitoring_placemat p{
 	color: #38614F;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
@@ -464,6 +524,16 @@ section p{
 	padding-right: 10px;
 }
 
+.box_monitoring_placemat{
+	border: thin solid #e8eeec;
+	border-radius:25px;
+	font-size:13px;	
+	margin-bottom:7px;	
+	margin-top: 7px;	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 h1{
 	color: #688472;
 	font-size:18px;
@@ -516,6 +586,10 @@ table {
 	width: 1480px; 	
 }
 
+.table-monitoring_placemat{
+	width: 1220px; 	
+}
+
 table p{
 	font-size: 13px;
 }
@@ -540,6 +614,11 @@ th {
 }
 
 .table-header-monitoring{
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}
+
+.table-header-monitoring_placemat{
 	padding-top: 10px;
 	padding-bottom: 10px;	
 }
@@ -646,6 +725,11 @@ html, body{
 .page-monitoring{
 	width: 1480px;	
 }
+
+.page-monitoring_placemat{
+	width: 1220px;	
+}
+
 
 .siteBackgroundA{
 	margin:0;
