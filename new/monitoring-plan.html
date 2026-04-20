@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SHEP Monitoring Program</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Savannah Harbor Expansion Project engineering dredging environment research geography geographic information systems" name="keywords">
+<meta content="Savannah Harbor Expansion Project Monitoring Program" name="description">
+<meta content="Sergio Bernardes" name="author">
+
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+-->
+<link href="https://fonts.googleapis.com/css2? family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@100;300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Icon Font Stylesheet -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css"/>
+<!--	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Template Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+
+<!-- UGA footer Stylesheet -->
+<link rel="stylesheet" href="css/uga-footer.css" />
+</head>
+
+<body>
+
+<!-- Spinner Start -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+  <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status"> <span class="sr-only">Loading...</span> </div>
+</div>
+<!-- Spinner End --> 
+
+<!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0"> 
+  
+  <!-- Start navigation bar -->
+  <div id="nav-placeholder"></div>
+  <!-- End navigation bar --> 
+  
+</div>
+<!-- Navbar End --> 
+
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb" style="background-image: url('img/1920x1080/monitoring-schedule.jpg')">
+  <div class="overlay"></div>
+  <!-- Overlay for better text contrast -->
+  <div class="container text-center py-5" style="max-width: 900px;">
+    <h4 class="text-center text-white display-5 mb-2 wow fadeIn" data-wow-delay="0.5s">SHEP Monitoring Plan</h4>
+    <h5 class="text-start text-white wow fadeIn" data-wow-delay="0.3s"></h5>
+  </div>
+</div>
+
+<!-- Header End -->
+
+
+<!-- Feature Research Projects  Start -->
+<div class="container-fluid partner py-2">
+  <div class="container py-5">
+    <div class="row g-4 justify-content-center">
+		
+
+
+      <!-- <h4 class="display-7 text-primary text-center mb-4">SHEP Monitoring Plan and Calendar</h4> -->
+
+      <p class="mb-4">Activities of the SHEP monitoring program include Pre-Construction, Construction and Post-Construction components:</p>
+      <div class="mb-2 mt-0">
+        <p class="about-item mb-3"><i class="fa fa-check text-primary me-2"></i>Pre-Construction Monitoring: establish baseline databank/conditions to assist with impact assessment during later phases.</p>
+        <p class="about-item mb-3"><i class="fa fa-check text-primary me-2"></i>Monitoring During Construction: ensure the construction process is within the environmental constraints imposed by EIS and approvals of the resource agencies</p>
+        <p class="about-item mb-3"><i class="fa fa-check text-primary me-2"></i>Post-Construction Monitoring: verify that project does not produce more impacts than predicted and mitigation features function as intended</p>
+      </div>
+
+      <p class="text-start mt-0">The following figures present the Savannah Harbor Expansion Project Monitoring Placemat as of November 2025. The table summarizes the major components of the SHEP monitoring program and the period of performance for each monitoring element. Appendix D of the Final EIS contains more information about the program and its requirements.</p>
+
+      <img src="img/ot/shep_monitoring_elements_table.png" alt="Monitoring Elements Table">
+
+      <p class="mb-4 mt-3">The table above reflects the timeline and schedule for the SHEP Monitoring Program during the Post-Construction phase of the SHEP project. Tables documenting the progression of program schedules during the Pre-Construction, Construction, and Post-Construction phases are available here (earlier schedule) and here (subsequent schedule).</p>
+
+      <p class="mb-2 mt-0">The monitoring elements are summarized below, with information on their spatial extent across the full monitoring area and their current implementation status.</p>
+
+      <img src="img/ot/shep_monitoring_elements.png" alt="Monitoring Elements">
+
+
+    </div>
+  </div>
+</div>
+<!-- Feature Research Projects  End --> 
+
+
+
+
+<!-- Footer Start -->
+<div id="foot-placeholder"> </div>
+<!-- Footer End --> 
+
+<!-- Back to Top --> 
+<a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a> 
+	
+<!-- Modal Structure -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header"> 
+        <!--
+<h5 class="modal-title" id="imageModalLabel">Image and Caption</h5>
+-->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center"> <img src="" id="modalImage" class="img-fluid rounded mb-3" alt="Modal Image">
+        <p id="modalCaption"></p>
+      </div>
+    </div>
+  </div>
+</div>	
+
+<!-- JavaScript Libraries --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="lib/wow/wow.min.js"></script> 
+<script src="lib/easing/easing.min.js"></script> 
+<script src="lib/waypoints/waypoints.min.js"></script> 
+<script src="lib/owlcarousel/owl.carousel.min.js"></script> 
+<script>
+			$.get("navigation.html", function(data){
+				$("#nav-placeholder").replaceWith(data);
+			});
+		</script> 
+<script>
+			$.get("footer.html", function(data){
+				$("#foot-placeholder").replaceWith(data);
+			});
+		</script> 
+
+<!-- <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const currentPage = window.location.pathname.split("/").pop();
+
+  document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+
+});
+</script>     -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+
+        // Remove active class from all nav links
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        navLinks.forEach(function(link) {
+            link.classList.remove('active');
+        });
+
+        // Loop through nav links and set the active class
+        navLinks.forEach(function(link) {
+            var href = link.getAttribute('href');
+            if (href === page) {
+                link.classList.add('active');
+
+                // If it's a dropdown item, also add the active class to the parent dropdown
+                var parentDropdown = link.closest('.nav-item.dropdown');
+                if (parentDropdown) {
+                    parentDropdown.querySelector('.nav-link.dropdown-toggle').classList.add('active');
+                }
+            }
+        });
+    });
+</script> 
+<!-- Template Javascript --> 
+<script src="js/main.js"></script>
+<script src="js/modal-handler.js"></script> <!-- Adjust the path as needed -->
+	
+</body>
+</html>
